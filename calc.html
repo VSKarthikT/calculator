@@ -1,83 +1,50 @@
 <!DOCTYPE html>
 <html>
-
   <head>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <style>
-      
-      .calc_ops{
-        display: grid;
-        grid-gap: 1px;
-        grid-template-columns: repeat(4, 1fr);
-      }
-      .ops{
-        background-color: white;
-        padding: 0.5em 1.25em;
-        position: relative;
-        text-align: center;
-        border-radius: 5px;
-        outline: none;
-        border: 1px solid transparent;
-        cursor: pointer;
-
-      }
-
-      .ops:active{
-        background-color: gray;
-      }
-      .calc {
-        border-radius: 10px;
-        box-shadow: 0 0 40px 0px rgba(0, 0, 0, 0.15);
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 2em;
-        max-width: 15em;
-        overflow: hidden;
-        border: 2px solid gray;
-        
-        
-      }
-
-      .calc_disp{
-        border: 2px solid gray;
-        border-radius: 2px;
-        background-color: gray;
-        color: white;
-      }
-     
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css-styles/numbers.css">
   </head>
 
-
-  <body style="background-color: rgb(154, 152, 152); 
-  font-family: Saira Extra Condensed ;">
-    <div class = "calc">
-      <div class = "calc_disp js-calc-disp-container">0</div>
-      <div class = "calc_ops">
-        <button class = "ops js-number-calc">+</button>
-        <button class = "ops js-number-calc">-</button>
-        <button class = "ops js-number-calc">X</button>
-        <button class = "ops js-number-calc">/</button>
-        <button class = "ops js-number-calc">7</button>
-        <button class = "ops js-number-calc">8</button>
-        <button class = "ops js-number-calc">9</button>
-        <button class = "ops js-number-calc">4</button>
-        <button class = "ops js-number-calc">5</button>
-        <button class = "ops js-number-calc">6</button>
-        <button class = "ops js-number-calc">1</button>
-        <button class = "ops js-number-calc">2</button>
-        <button class = "ops js-number-calc">3</button>
-        <button class = "ops js-number-calc">0</button>
-        <button class = "ops js-number-calc">(</button>
-        <button class = "ops js-number-calc">)</button>
-        <button class = "ops js-number-calc">.</button>
-        <button class = "ops js-clear-calc">AC</button>
-        <button class = "ops js-eval-calc">=</button>
+  <body
+    style="
+      background-color: rgb(154, 152, 152);
+      font-family: Saira Extra Condensed; 
+    "
+  >
+    <div class="calc">
+      <div class="clac_tex">CALCULATOR</div>
+      <div class="calc_disp js-calc-disp-container">0</div>
+      <div class="calc_ops">
+        <button class="ops js-number-calc">+</button>
+        <button class="ops js-number-calc">-</button>
+        <button class="ops js-number-calc">X</button>
+        <button class="ops js-number-calc">/</button>
+        <button class="ops js-number-calc">7</button>
+        <button class="ops js-number-calc">8</button>
+        <button class="ops js-number-calc">9</button>
+        <button class="ops js-number-calc">4</button>
+        <button class="ops js-number-calc">5</button>
+        <button class="ops js-number-calc">6</button>
+        <button class="ops js-number-calc">1</button>
+        <button class="ops js-number-calc">2</button>
+        <button class="ops js-number-calc">3</button>
+        <button class="ops js-number-calc">0</button>
+        <button class="ops js-number-calc">(</button>
+        <button class="ops js-number-calc">)</button>
+        <button class="ops js-number-calc">.</button>
+        <button class="ops js-clear-calc">AC</button>
+        <button class="ops js-eval-calc">=</button>
+        
+        
       </div>
     </div>
+
+    
     <script type="module" src="./scripts/calc.js"></script>
   </body>
 </html>
